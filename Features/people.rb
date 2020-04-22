@@ -4,6 +4,7 @@
 #3. First loop error if less that 3 and error if more than 7
 #4. Second error if invalid character and/or duplicate?
 #5. store names in array
+require 'colorize'
 
   def player_names
     continue_loop = true

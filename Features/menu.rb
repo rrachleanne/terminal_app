@@ -1,5 +1,5 @@
 #MENU COMPLETED
-#1. Welcome messgae
+#1. Welcome message
 #2. Array with menu options
 #3. Menu loop
 #4. Exit loop when new game and exit is selected
@@ -8,10 +8,13 @@
 #1. numbered menu options
 #2. Gems
 #3. Return to menu options
+gem 'lolize'
+require 'lolize/auto'
 
   def kellypool_menu
 	
 	puts "WELCOME TO KELLY POOL!"
+	sleep 3
 	
 	
 	game_menu = ["new game", "help", "exit"]
@@ -63,7 +66,7 @@
 				puts "To RETURN back to the main menu, click ENTER"
 				puts "********************************************"
 				ready = gets.chomp
-                sleep 1
+				
 			when "exit"
 				system "clear"
 				puts "Goodbye"
