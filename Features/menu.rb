@@ -1,13 +1,14 @@
-#MENU COMPLETED
-#1. Welcome message
-#2. Array with menu options
-#3. Menu loop
-#4. Exit loop when new game and exit is selected
+#MENU 
+#1. Welcome message - done
+#2. Array with menu options - done
+#3. Menu loop - done
+#4. Exit loop when new game and exit is selected - done
 
-#Extra Features
+#Extra Features TO DO
 #1. numbered menu options
 #2. Gems
 #3. Return to menu options
+
 gem 'lolize'
 require 'lolize/auto'
 

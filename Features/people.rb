@@ -1,9 +1,17 @@
 
-#1. create def called player names
-#2. create array and loop to add player names
+#PEOPLE FEATURE
+
+#1. create def called player names - done
+#2. create array and loop to add player names - done
 #3. First error if less then 3 and error if more than 7
 #4. Second error if invalid character and/or duplicate?
-#5. store names in array
+#5. store names in array - Done
+
+# TO DO:
+#1. Work on point 3
+#2. UI
+#3.  work on poin 4
+
 require 'colorize'
 
   def player_names
