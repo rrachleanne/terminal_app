@@ -1,7 +1,26 @@
 
+require "tty-font"
+require 'tty-box'
 gem 'lolize'
 require 'lolize/auto'
- puts "this is a test"
+
+font = TTY::Font.new(:doom)
+
+title1 = font.write("KELLY POOL")
+title2 = font.write("No. Generator")
+
+
+box = TTY::Box.frame "Welcome to the", "#{title1}", "#{title2}", "Press ENTER to continue", padding: 5, align: :center
+print box
+
+
+
+
+
+
+# gem 'lolize'
+# require 'lolize/auto'
+#  puts "this is a test"
 
 # $numbers1 = Hash.new
 # def player1

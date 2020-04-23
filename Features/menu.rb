@@ -9,34 +9,38 @@
 #2. Gems
 #3. Return to menu options
 
+
 gem 'lolize'
 require 'lolize/auto'
 
+
+
   def kellypool_menu
-	
-	puts "WELCOME TO KELLY POOL!"
-	sleep 3
-	
-	
-	game_menu = ["new game", "help", "exit"]
+		
+	game_menu = ["1. New game", "2. Help", "3. Exit"]
     
     continue_loop = true
 	
 	while continue_loop		
 		system "clear"
+		puts "What would you like to do?"
+	    puts ""
+		puts ""
+		print TTY::Box.frame { """#{game_menu.join("| ")}"  }
 		
-		puts "What would you like to do? (options: #{game_menu.join(", ")})"
 		action = gets.strip.downcase
 
 		case action
-			when "new game"
-                puts "Great, lets start!"
-                #add in clear?
-                sleep 1
+			when "1"
+				puts "Great, lets start!"
+				sleep 1
+				system "clear"
+                
+               
                                
                 continue_loop = false
 
-			when "help"
+			when "2"
 				system "clear"
 				puts "HELP"
                 puts "How To use this app:"
@@ -68,7 +72,7 @@ require 'lolize/auto'
 				puts "********************************************"
 				ready = gets.chomp
 				
-			when "exit"
+			when "3"
 				system "clear"
 				puts "You have chosen to leave this the Kelly Pool No. Generator"
 				sleep 2
@@ -78,12 +82,13 @@ require 'lolize/auto'
 				continue_loop = false
 
 			else
+				system 'clear'
 				puts "Invalid selection!, please enter in a correct menu item."
 				puts 'OK?'
 				ok = gets.chomp
 				
 		end
-		sleep 2
+		
 	end
 end
 

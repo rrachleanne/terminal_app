@@ -1,10 +1,9 @@
-# Kelly Pool No Generator
+# Kelly Pool No Generator ![](https://github.com/rrachleanne/terminal_app/blob/master/Images/headericon8.png?raw=true)
 
-## Software Development Plan
+## Software Development Plan                            
+##### Terminal Application Assignment - v.1
 
-#### Terminal Application Assignment - v.1
-
-![](www.)
+------
 
 ### <u>Statement of Purpose and Scope</u>
 
@@ -31,6 +30,8 @@ A player is assigned a ball number at random that is kept secret from their oppo
 The idea is that each player must sink all the other balls on the table and be the last man standing to win the game.
 
 Each Kelly pool game is different depending how you have been taught. Here are some variations: https://en.wikipedia.org/wiki/Kelly_pool
+
+![](https://github.com/rrachleanne/terminal_app/blob/master/Images/Balls_image1.png?raw=true)
 
 **Audience** 
 
@@ -90,13 +91,15 @@ If the end user incorrectly enters an invalid selection or character they will b
 
 ### Control Flow Diagram
 
-
+![](https://github.com/rrachleanne/terminal_app/blob/master/Images/Control%20Flow%20Diagram.png?raw=true)
 
 ------
 
 ### Implementation Plan
 
+![](https://github.com/rrachleanne/terminal_app/blob/master/Images/Trello%20board.png)
 
+Trello board: [Click Here](https://trello.com/invite/b/9x6AmG59/c1e1b8cb682661a3a34390a27a464e43/kelly-pool-app-sprint)
 
 
 
@@ -104,5 +107,10 @@ If the end user incorrectly enters an invalid selection or character they will b
 
 ### **References**
 
-[]: 
+1. Rainbow text | GEM | https://github.com/miaout17/lolize
+2. Pool Rules |Wiki| https://en.wikipedia.org/wiki/Kelly_pool
+3. Implementation Plan | TRELLO | https://trello.com/invite/b/9x6AmG59/c1e1b8cb682661a3a34390a27a464e43/kelly-pool-app-sprint
+4. Control Flow Diagram |Drawio | https://app.diagrams.net/
+
+Created by Rachel-Leanne Williams
 

@@ -11,22 +11,25 @@
 #1. Work on point 3
 #2. UI
 #3.  work on poin 4
+#4 2 and 8 does not loop back
+#5. names being uppercase?
 
 require 'colorize'
 
   def player_names
     players = Array.new
-        
+    system 'clear'
     puts "how many players?"
     numPlayers = gets.strip.to_i
+    system 'clear'
     
     if (numPlayers < 3)
-      puts "Minimum number of players is 3, please try again."
+      puts "Minimum number of players is 3.\nPlease try again."
       return players
     end
 
     if (numPlayers > 7)
-      puts "Maximum number of players is 7, please try again."
+      puts "Maximum number of players is 7.\nPlease try again."
       return players
     end
 
