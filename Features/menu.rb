@@ -69,10 +69,18 @@ require 'lolize/auto'
 				
 			when "exit"
 				system "clear"
+				puts "You have chosen to leave this the Kelly Pool No. Generator"
+				sleep 2
+				system "clear"
 				puts "Goodbye"
+				sleep 3
 				continue_loop = false
+
 			else
-				puts "Invalid selection!"
+				puts "Invalid selection!, please enter in a correct menu item."
+				puts 'OK?'
+				ok = gets.chomp
+				
 		end
 		sleep 2
 	end
