@@ -16,23 +16,26 @@
 
 require 'colorize'
 
+
   def player_names
     players = Array.new
     system 'clear'
-    puts "how many players?"
+    puts "How many players?"
     numPlayers = gets.strip.to_i
     system 'clear'
     
     if (numPlayers < 3)
-      puts "Minimum number of players is 3.\nPlease try again."
-      return players
+      puts "Invalid entry\nMinimum number of players is 3.\n Press ENTER to try again?"
+      try = gets.chomp
+      player_names
     end
 
     if (numPlayers > 7)
-      puts "Maximum number of players is 7.\nPlease try again."
-      return players
+      puts "Invalid entry\nMaximum number of players is 7.\nPress ENTER to try again."
+      try = gets.chomp
+      player_names
     end
-
+#iterator (runs through once)
     i = 1
 
     puts "Please enter in #{numPlayers} player names."
@@ -41,13 +44,14 @@ require 'colorize'
       name = gets.chomp
 
       players.push (name)
-
+#increment until we reach no. of players
       i += 1
     end
 
     return players
 
   end
+
 
 
 #player_names

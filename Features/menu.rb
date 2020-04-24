@@ -29,6 +29,7 @@ require 'lolize/auto'
 		print TTY::Box.frame { """#{game_menu.join("| ")}"  }
 		
 		action = gets.strip.downcase
+			
 
 		case action
 			when "1"
@@ -91,6 +92,7 @@ require 'lolize/auto'
 		
 	end
 end
+
 
 
 

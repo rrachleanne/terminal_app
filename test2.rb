@@ -1,17 +1,86 @@
+def kellypool_menu
+		
+	game_menu = ["1. New game", "2. Help", "3. Exit"]
+    
+    continue_loop = true
+	
+	while continue_loop		
+		system "clear"
+		puts "What would you like to do?"
+	    puts ""
+		puts ""
+		print TTY::Box.frame { """#{game_menu.join("| ")}"  }
+		
+		# action = gets.strip.downcase
+		action = Integer(gets)
+		rescue ArgumentError
+			puts "Please enter a number"
+			retry
+        end
+    end
 
-require "tty-font"
-require 'tty-box'
-gem 'lolize'
-require 'lolize/auto'
+		case action
+			when "1"
+				puts "Great, lets start!"
+				sleep 1
+				system "clear"
+                
+               
+                               
+                continue_loop = false
 
-font = TTY::Font.new(:doom)
+			when "2"
+				
+				puts "HELP"
+               				puts "********************************************"
+				puts "To RETURN back to the main menu, click ENTER"
+				puts "********************************************"
+				ready = gets.chomp
+				
+			when "3"
+				system "clear"
+				puts "You have chosen to leave this the Kelly Pool No. Generator"
+				sleep 2
+				system "clear"
+				puts "Goodbye"
+				sleep 3
+				continue_loop = false
 
-title1 = font.write("KELLY POOL")
-title2 = font.write("No. Generator")
+			else
+				system 'clear'
+				puts "Invalid selection!, please enter in a correct menu item."
+				puts 'OK?'
+				ok = gets.chomp
+				
+		end
+		
+	end
+end
 
 
-box = TTY::Box.frame "Welcome to the", "#{title1}", "#{title2}", "Press ENTER to continue", padding: 5, align: :center
-print box
+
+
+
+
+
+
+
+
+
+
+# require "tty-font"
+# require 'tty-box'
+# gem 'lolize'
+# require 'lolize/auto'
+
+# font = TTY::Font.new(:doom)
+
+# title1 = font.write("KELLY POOL")
+# title2 = font.write("No. Generator")
+
+
+# box = TTY::Box.frame "Welcome to the", "#{title1}", "#{title2}", "Press ENTER to continue", padding: 5, align: :center
+# print box
 
 
 
