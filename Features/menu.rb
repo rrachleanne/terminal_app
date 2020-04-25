@@ -3,21 +3,21 @@
 #2. Array with menu options - done
 #3. Menu loop - done
 #4. Exit loop when new game and exit is selected - done
-
-#Extra Features TO DO
-#1. numbered menu options
-#2. Gems
-#3. Return to menu options
+#5. Loop "Help" - done
+#6 Gems installed > table for menu - done
 
 
-gem 'lolize'
-require 'lolize/auto'
 
+require "terminal-table"
 
 
   def kellypool_menu
 		
-	game_menu = ["1. New game", "2. Help", "3. Exit"]
+    rows = []
+	rows << ['New Game', 1]
+	rows << ['Help', 2]
+	rows << ['Exit Game', 3]
+	game_menu_table = Terminal::Table.new :rows => rows
     
     continue_loop = true
 	
@@ -25,9 +25,10 @@ require 'lolize/auto'
 		system "clear"
 		puts "What would you like to do?"
 	    puts ""
-		puts ""
-		print TTY::Box.frame { """#{game_menu.join("| ")}"  }
+		puts "MENU:"
+		puts game_menu_table
 		
+
 		action = gets.strip.downcase
 			
 
@@ -36,9 +37,7 @@ require 'lolize/auto'
 				puts "Great, lets start!"
 				sleep 1
 				system "clear"
-                
-               
-                               
+                                 
                 continue_loop = false
 
 			when "2"
@@ -55,13 +54,13 @@ require 'lolize/auto'
 				puts "*******************"
 				puts ""
 				puts "How To Play Kelly Pool:"
-                puts "1. This game is designed for 3-7 players from the age of 7+"
+                puts "1. This game is designed for 3-15 players from the age of 7+"
                 puts "2. Use this app to enter in the players names to produce a number."
 				puts "3. Once a number has been allocated and shown (secretly) to each player you may begin the game"
 				puts "4. Your pool table should have 15 coloured balls with numbers and one white ball with no numbers."
 				puts "5. Set up the white ball at the D and the remainder coloured balls in the shape of a triangle pointing to the last black dot on the table"
 				puts "6  Once the table is set up, the first player should break the balls from the D and then pass the cue to the next person to take a shot. "
-				puts "7. Eac player will have a go until it returns to the first player for a second go"
+				puts "7. Each player will have a go until it returns to the first player for a second go"
 				puts "NOTE:"
 				puts "- If your ball has been sunk by another player, you are out of the game"
 				puts "- If all other players balls have been sunk and yours still remains, you WIN the game!"
@@ -71,7 +70,9 @@ require 'lolize/auto'
 				puts "********************************************"
 				puts "To RETURN back to the main menu, click ENTER"
 				puts "********************************************"
-				ready = gets.chomp
+				ready = gets.chomp	
+				continue_loop = true
+				
 				
 			when "3"
 				system "clear"
@@ -79,9 +80,11 @@ require 'lolize/auto'
 				sleep 2
 				system "clear"
 				puts "Goodbye"
-				sleep 3
+				sleep 2
+				system 'clear'
 				continue_loop = false
-
+				main_app
+				
 			else
 				system 'clear'
 				puts "Invalid selection!, please enter in a correct menu item."
@@ -89,7 +92,7 @@ require 'lolize/auto'
 				ok = gets.chomp
 				
 		end
-		
+
 	end
 end
 

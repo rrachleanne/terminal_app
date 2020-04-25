@@ -18,14 +18,14 @@ require_relative "./menu.rb"
 def ball_numbers (players)
 
    system 'clear'
-   puts "Hello, #{players}"
+
    puts "Are all players ready?"
    ready = gets.chomp
    system 'clear'
 
    numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
   
-   #loop
+   #forloop
   for p in players
     number = numbers.sample
 
@@ -41,6 +41,7 @@ def ball_numbers (players)
 #Number removed so it doesn't duplicate for another player
       numbers.delete(number)
    end
+     
    puts "All players have recieved their ball number, you\'re now ready to start playing Kelly Pool!"
    puts "Good Luck!"
    sleep 2

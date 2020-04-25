@@ -13,9 +13,7 @@
 #3.  work on poin 4
 #4 2 and 8 does not loop back
 #5. names being uppercase?
-
-require 'colorize'
-
+#FIX ERROR HANDLING
 
   def player_names
     players = Array.new
@@ -23,26 +21,31 @@ require 'colorize'
     puts "How many players?"
     numPlayers = gets.strip.to_i
     system 'clear'
-    
-    if (numPlayers < 3)
-      puts "Invalid entry\nMinimum number of players is 3.\n Press ENTER to try again?"
-      try = gets.chomp
-      player_names
-    end
+          
+      if (numPlayers < 3)
+        puts "Invalid entry\nMinimum number of players is 3.\Try again"
+        sleep 2
+        system 'clear'
+        player_names
+     
+      end
 
-    if (numPlayers > 7)
-      puts "Invalid entry\nMaximum number of players is 7.\nPress ENTER to try again."
-      try = gets.chomp
-      player_names
-    end
+      if (numPlayers > 15)
+        puts "Invalid entry\nMaximum number of players is 15.\Try again."
+        sleep 2
+        system 'clear'
+        player_names
+       
+      end
+
 #iterator (runs through once)
     i = 1
-
+    
     puts "Please enter in #{numPlayers} player names."
     while i <= numPlayers do
       puts "Player #{i} name?"
       name = gets.chomp
-
+  
       players.push (name)
 #increment until we reach no. of players
       i += 1
