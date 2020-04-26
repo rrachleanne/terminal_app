@@ -7,13 +7,11 @@
 #4. Second error if invalid character and/or duplicate?
 #5. store names in array - Done
 
-# TO DO:
+# TO DO/WOULD LIKE:
 #1. Work on point 3
-#2. UI
-#3.  work on poin 4
-#4 2 and 8 does not loop back
-#5. names being uppercase?
-#FIX ERROR HANDLING
+#2. Work on point 4
+#3. names being uppercase?
+#4.FIX ERROR HANDLING
 
   def player_names
     players = Array.new

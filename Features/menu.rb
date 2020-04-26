@@ -70,7 +70,7 @@ require "terminal-table"
 				puts "********************************************"
 				puts "To RETURN back to the main menu, click ENTER"
 				puts "********************************************"
-				ready = gets.chomp	
+				ready = gets.chomp							
 				continue_loop = true
 				
 				

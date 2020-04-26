@@ -3,10 +3,9 @@
 #2. generates number and require people
 
 #Fixes TO DO: 
-#1. Return to Menu
-#2. UI
-#3. View numbers
-#4. fix output of player array
+#1. UI
+#2. View numbers
+#3. fix output of player array
 
 
 

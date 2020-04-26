@@ -7,6 +7,7 @@
 
 require_relative "./features/menu.rb"
 require_relative "./features/people.rb"
+require_relative "./features/error.rb"
 require_relative "./features/ball_numbers.rb"
 require "tty-font"
 require 'tty-box'
@@ -31,15 +32,12 @@ def main_app
         kellypool_menu
     else
         system 'clear'
+        error_msg
+        sleep 2
+        system 'clear'
         main_app
     end
 
-    invalid_enty = [nil]
-    begin
-      puts "thanks #{name}"
-    rescue
-      puts "invalid entry #{invalid_word}, please enter in a word"
-    end
 
     #call on array from player_name method from return
     players = player_names
