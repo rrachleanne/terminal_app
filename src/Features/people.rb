@@ -46,15 +46,14 @@
       begin
          puts "Player #{i} name?"
          name = gets.chomp
-        players.push (name)
-        
-          #raised an exception
-       raise 'Player not found' unless players[i-1]!=""
-          #increment until we reach no. of players
+          #raise an exception
+         raise StandardError if name ==""
+         #increment until we reach no. of players
+         players.push (name) 
           i += 1
         rescue 
-          puts "Player not found"
-        # retry
+          puts "Blank name entered, please try again"
+        retry
        
       end
 
