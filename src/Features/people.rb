@@ -19,7 +19,8 @@
     puts "How many players?"
     numPlayers = gets.strip.to_i
     system 'clear'
-          
+    
+            
       if (numPlayers < 3)
         puts "Invalid entry\nMinimum number of players is 3.\Try again"
         sleep 2
@@ -39,14 +40,22 @@
 #iterator (runs through once)
     i = 1
     
+    
     puts "Please enter in #{numPlayers} player names."
     while i <= numPlayers do
+      begin
       puts "Player #{i} name?"
       name = gets.chomp
-  
       players.push (name)
-#increment until we reach no. of players
+      #raised an exception
+       raise 'Player not found' unless players[i-1]
+    #increment until we reach no. of players
       i += 1
+      rescue 
+        puts "Player not found"
+        retry
+      end
+
     end
 
     return players

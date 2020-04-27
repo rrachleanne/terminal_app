@@ -1,12 +1,6 @@
 #Ball Numbers
-#1. Create array of numbers and argument
-#2. generates number and require people
-
-#Fixes TO DO: 
-#1. UI
-#2. View numbers
-#3. fix output of player array
-
+#1. Create array of numbers and argument DONE
+#2. generates number and require people DONE
 
 
 require_relative "./people.rb"
@@ -28,13 +22,13 @@ def ball_numbers (players)
   for p in players
     number = numbers.sample
 
-     puts "#{p}, press any ENTER to see your ball."
+     puts "#{p}, press ENTER to see your ball."
      ready2 = gets.chomp
      system 'clear'
      puts "#{p}, your ball is:"
      puts "       #{number}      " 
      sleep 1
-     puts "When ready, ENTER any key to hide your number."
+     puts "When ready, press ENTER to hide your number."
      hide = gets.chomp
      system 'clear'
 #Number removed so it doesn't duplicate for another player

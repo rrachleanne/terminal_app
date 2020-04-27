@@ -1,8 +1,8 @@
 #Main Application
-#1. Require other files
-#2. Add gems
-#3. Add Welcome message
-#4. Add control flow to enter app
+#1. Require other files - DONE
+#2. Add gems - DONE
+#3. Add Welcome message - DONE
+#4. Add control flow to enter app - DONE
 
 
 require_relative "./features/menu.rb"
@@ -27,10 +27,10 @@ def main_app
 	key = gets.chomp
 
     case key
-    when "y"
+     when "y"
         #call menu
         kellypool_menu
-    else
+     else
         system 'clear'
         error_msg
         sleep 2
@@ -42,9 +42,9 @@ def main_app
     #call on array from player_name method from return
     players = player_names
     #if ppl greater than 0 start ball_numbers method | recursive call
-        if (players.length > 0) 
-           ball_numbers(players)
-        end
+    if (players.length > 0) 
+        ball_numbers(players)
+    end
 
 end
     

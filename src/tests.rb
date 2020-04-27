@@ -12,12 +12,13 @@ require_relative "./features/ball_numbers.rb"
 
 
 class Game_test < Test::Unit::TestCase
-
-  # def menu_test
-  #         #first value = expectation | Second value =retun value of that method
-  #         #test input of menu item
-  #         assert_equal "1" , main_app[0], "Enter's Application"
-  # end
+#must have 'test' at the beginning 
+  def test_menu
+          #first value = expectation | Second value =retun value of that method
+          #test input of menu item
+          action = kellypool_menu
+          assert_equal "1" , action, "User types 1"
+  end
 
   def test_players
         #first value = expectation | Second value =retun value of that method

@@ -1,12 +1,10 @@
 
 
-
-require "test/unit"
-include Test::Unit::Assertions
-
-x = true
-
-assert x, "x should pass"
+begin
+  raise Exception.new
+rescue Exception => error
+  puts "Correct!"
+end
 
 
 
@@ -14,6 +12,50 @@ assert x, "x should pass"
 
 
 
+
+
+
+
+
+# require "tty-font"
+# require 'tty-box'
+# gem 'lolize'
+# require 'lolize/auto'
+
+# def main_app
+
+#   font = TTY::Font.new(:starwars)
+
+#   title1 = font.write("KELLY POOL")
+#   title2 = font.write("No. Generator")
+
+#   box = TTY::Box.frame "Welcome to the", "#{title1}", "#{title2}", "Press [Y] to continue", padding: 5, align: :center
+#   print box
+
+# key = gets.chomp
+# invalid_entry =
+
+#   begin
+      
+#       puts 'menu'
+#   rescue
+#       puts "Invalid entry #{invalid_entry}"
+#       sleep 2
+#       main_app
+#   end
+
+
+
+#   # #call on array from player_name method from return
+#   # players = player_names
+#   # #if ppl greater than 0 start ball_numbers method | recursive call
+#   # if (players.length > 0) 
+#   #     ball_numbers(players)
+#   # end
+
+# end
+
+# main_app
 
 # def pic_five
 #     puts"

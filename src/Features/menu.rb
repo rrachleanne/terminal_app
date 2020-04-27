@@ -94,6 +94,7 @@ require "terminal-table"
 		end
 
 	end
+	return action
 end
 
 
