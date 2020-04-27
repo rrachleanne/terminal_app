@@ -11,6 +11,8 @@
 - [Trello [LINK]](https://trello.com/b/9x6AmG59/kelly-pool-app-sprint)
 - [Presentation [LINK]](https://spark.adobe.com/page/w5NyQ8rqua2zz/)	
 
+![](https://github.com/rrachleanne/terminal_app/blob/master/docs/Pictures/2020-04-25_11-48-06.png?raw=true)
+
 ### <u>Statement of Purpose and Scope</u>
 
 **The Kelly Pool App**
