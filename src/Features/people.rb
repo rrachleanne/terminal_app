@@ -42,7 +42,7 @@
     i = 1    
  
     puts "Please enter in #{numPlayers} player names."
-    # while i <= numPlayers do
+    while i <= numPlayers do
       begin
          puts "Player #{i} name?"
          name = gets.chomp
@@ -50,17 +50,15 @@
         
           #raised an exception
        raise 'Player not found' unless players[i-1]!=""
-         print "value: #{players[i-1]}"
           #increment until we reach no. of players
           i += 1
         rescue 
-          puts "Please enter in player"
-          
-          retry
-        
+          puts "Player not found"
+        # retry
+       
       end
 
-    # end
+    end
 
     return players
 
