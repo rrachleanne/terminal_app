@@ -1,18 +1,35 @@
-def pic_five
-    puts"
 
-       ______________
-       | ___________ |
-       | | -       | |
-       | |         | |
-       | |_________| |_________________________
-       \=____________/   ERROR TRY AGAIN       )
-       / ''''''''''''\                         /
-      / ::::::::::::: \                  =D-/
-     (_________________)"
-  end
 
-pic_five
+
+require "test/unit"
+include Test::Unit::Assertions
+
+x = true
+
+assert x, "x should pass"
+
+
+
+
+
+
+
+
+# def pic_five
+#     puts"
+
+#        ______________
+#        | ___________ |
+#        | | -       | |
+#        | |         | |
+#        | |_________| |_________________________
+#        \=____________/   ERROR TRY AGAIN       )
+#        / ''''''''''''\                         /
+#       / ::::::::::::: \                  =D-/
+#      (_________________)"
+#   end
+
+# pic_five
 
 
 
@@ -55,7 +72,7 @@ pic_five
 #   end
 
 
-  player_names
+  # player_names
 
         
 #       if (numPlayers < 3)
